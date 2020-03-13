@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29827.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RealWorldUI.Shared", "RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RealWorldUI.Shared", "src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldUI.Droid", "RealWorldUI\RealWorldUI.Droid\RealWorldUI.Droid.csproj", "{26228D22-0348-4687-8F76-E3BA657C0EDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldUI.Droid", "src\RealWorldUI\RealWorldUI.Droid\RealWorldUI.Droid.csproj", "{26228D22-0348-4687-8F76-E3BA657C0EDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldUI.iOS", "RealWorldUI\RealWorldUI.iOS\RealWorldUI.iOS.csproj", "{347DFCD4-84DE-4C92-A84A-96835FF8BE7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldUI.iOS", "src\RealWorldUI\RealWorldUI.iOS\RealWorldUI.iOS.csproj", "{347DFCD4-84DE-4C92-A84A-96835FF8BE7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldUI.UWP", "RealWorldUI\RealWorldUI.UWP\RealWorldUI.UWP.csproj", "{49A4D05B-71F4-4A36-BBCD-AE536F62A88A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldUI.UWP", "src\RealWorldUI\RealWorldUI.UWP\RealWorldUI.UWP.csproj", "{49A4D05B-71F4-4A36-BBCD-AE536F62A88A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealWorldUI.Wasm", "RealWorldUI\RealWorldUI.Wasm\RealWorldUI.Wasm.csproj", "{D83B207B-260A-45CC-841C-B6BA0D708494}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealWorldUI.Wasm", "src\RealWorldUI\RealWorldUI.Wasm\RealWorldUI.Wasm.csproj", "{D83B207B-260A-45CC-841C-B6BA0D708494}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{B4DFC38B-CA41-4DAE-9815-52D8C769CCDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{CAB2DBE3-7C12-494F-9519-181C0914B620}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldWebAPI", "RealWorldWebAPI\RealWorldWebAPI.csproj", "{976B962D-3F1C-4105-8EEB-E594EA2E95F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldWebAPI", "src\RealWorldWebAPI\RealWorldWebAPI.csproj", "{976B962D-3F1C-4105-8EEB-E594EA2E95F0}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
