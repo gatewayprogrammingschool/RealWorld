@@ -44,7 +44,7 @@ Global
 		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{347dfcd4-84de-4c92-a84a-96835ff8be7c}*SharedItemsImports = 4
 		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{49a4d05b-71f4-4a36-bbcd-ae536f62a88a}*SharedItemsImports = 4
 		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
-		RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{d83b207b-260a-45cc-841c-b6ba0d708494}*SharedItemsImports = 5
+		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{d83b207b-260a-45cc-841c-b6ba0d708494}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -260,6 +260,7 @@ Global
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.AppStore|x86.ActiveCfg = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.AppStore|x86.Build.0 = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|ARM.Build.0 = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|iPhone.ActiveCfg = Debug|Any CPU
