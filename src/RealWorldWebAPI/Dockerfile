@@ -7,10 +7,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["RealWorldWebAPI/RealWorldWebAPI.csproj", "RealWorldWebAPI/"]
-RUN dotnet restore "RealWorldWebAPI/RealWorldWebAPI.csproj"
+COPY ["src/RealWorldWebAPI/RealWorldWebAPI.csproj", "src/RealWorldWebAPI/"]
+COPY ["src/Common/RealWorldCommon/RealWorldCommon.csproj", "src/Common/RealWorldCommon/"]
+RUN dotnet restore "src/RealWorldWebAPI/RealWorldWebAPI.csproj"
 COPY . .
-WORKDIR "/src/RealWorldWebAPI"
+WORKDIR "/src/src/RealWorldWebAPI"
 RUN dotnet build "RealWorldWebAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish

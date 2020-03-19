@@ -12,6 +12,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RealWorldWebAPI.Data.Models;
+using Newtonsoft;
+using Newtonsoft.Json;
+using System.IO;
+using RealWorldWebAPI.Controllers;
+using RealWorldWebAPI.Services;
 
 namespace RealWorldWebAPI
 {
@@ -27,10 +32,15 @@ namespace RealWorldWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             services
-                .AddDbContext<RealWorldDbContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("Sqlite")));
+                .AddDbContext<RealWorldContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("Sqlite")))
+                .AddScoped<UserService>()
+                .AddScoped<ArticleService>()
+                .AddScoped<FavoritesService>()
+                .AddScoped<CommentsService>()
+                .AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +60,17 @@ namespace RealWorldWebAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.Use(async (context, next) =>
+            {
+                // Do loging
+                // Do work that doesn't write to the Response.
+                //var body = await new StreamReader(context.Request.Body).ReadToEndAsync();
+                //var bodyObect = JsonConvert.DeserializeObject<UserRequest>(body);
+
+                await next.Invoke();
+                // Do logging or other work that doesn't write to the Response.
             });
         }
     }

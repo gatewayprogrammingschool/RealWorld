@@ -17,14 +17,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{B4DFC38B-CA41-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{CAB2DBE3-7C12-494F-9519-181C0914B620}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorldWebAPI", "src\RealWorldWebAPI\RealWorldWebAPI.csproj", "{976B962D-3F1C-4105-8EEB-E594EA2E95F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealWorldWebAPI", "src\RealWorldWebAPI\RealWorldWebAPI.csproj", "{976B962D-3F1C-4105-8EEB-E594EA2E95F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2893B3A9-AEFD-48BC-BF19-BCBF025E208D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealWorldCommon", "src\Common\RealWorldCommon\RealWorldCommon.csproj", "{A72D0A07-B2BA-483A-8AAE-722DCCD18076}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repo Root", "Repo Root", "{B5963B8A-820E-4F51-8150-D01FD04D5408}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{3A79A1D2-7C86-42CD-816E-413C9F6F07ED}"
+	ProjectSection(SolutionItems) = preProject
+		docs\index.md = docs\index.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{26228d22-0348-4687-8f76-e3ba657c0edc}*SharedItemsImports = 4
-		RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{347dfcd4-84de-4c92-a84a-96835ff8be7c}*SharedItemsImports = 4
-		RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{49a4d05b-71f4-4a36-bbcd-ae536f62a88a}*SharedItemsImports = 4
-		RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{26228d22-0348-4687-8f76-e3ba657c0edc}*SharedItemsImports = 4
+		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{347dfcd4-84de-4c92-a84a-96835ff8be7c}*SharedItemsImports = 4
+		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{49a4d05b-71f4-4a36-bbcd-ae536f62a88a}*SharedItemsImports = 4
+		src\RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
 		RealWorldUI\RealWorldUI.Shared\RealWorldUI.Shared.projitems*{d83b207b-260a-45cc-841c-b6ba0d708494}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,8 +109,6 @@ Global
 		{26228D22-0348-4687-8F76-E3BA657C0EDC}.AppStore|x86.Build.0 = Release|Any CPU
 		{26228D22-0348-4687-8F76-E3BA657C0EDC}.AppStore|x86.Deploy.0 = Release|Any CPU
 		{26228D22-0348-4687-8F76-E3BA657C0EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26228D22-0348-4687-8F76-E3BA657C0EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26228D22-0348-4687-8F76-E3BA657C0EDC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{26228D22-0348-4687-8F76-E3BA657C0EDC}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{26228D22-0348-4687-8F76-E3BA657C0EDC}.Debug|ARM.Build.0 = Debug|Any CPU
 		{26228D22-0348-4687-8F76-E3BA657C0EDC}.Debug|ARM.Deploy.0 = Debug|Any CPU
@@ -243,7 +259,6 @@ Global
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.AppStore|x86.ActiveCfg = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.AppStore|x86.Build.0 = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|ARM.Build.0 = Debug|Any CPU
 		{D83B207B-260A-45CC-841C-B6BA0D708494}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -314,6 +329,54 @@ Global
 		{976B962D-3F1C-4105-8EEB-E594EA2E95F0}.Release|x64.Build.0 = Release|Any CPU
 		{976B962D-3F1C-4105-8EEB-E594EA2E95F0}.Release|x86.ActiveCfg = Release|Any CPU
 		{976B962D-3F1C-4105-8EEB-E594EA2E95F0}.Release|x86.Build.0 = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|ARM.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|ARM.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|x64.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|x64.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|x86.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Ad-Hoc|x86.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|Any CPU.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|ARM.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|ARM.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|x64.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|x64.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|x86.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.AppStore|x86.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|x64.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Debug|x86.Build.0 = Debug|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|ARM.Build.0 = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|iPhone.Build.0 = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|x64.ActiveCfg = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|x64.Build.0 = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|x86.ActiveCfg = Release|Any CPU
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -325,6 +388,7 @@ Global
 		{49A4D05B-71F4-4A36-BBCD-AE536F62A88A} = {B4DFC38B-CA41-4DAE-9815-52D8C769CCDF}
 		{D83B207B-260A-45CC-841C-B6BA0D708494} = {B4DFC38B-CA41-4DAE-9815-52D8C769CCDF}
 		{976B962D-3F1C-4105-8EEB-E594EA2E95F0} = {CAB2DBE3-7C12-494F-9519-181C0914B620}
+		{A72D0A07-B2BA-483A-8AAE-722DCCD18076} = {2893B3A9-AEFD-48BC-BF19-BCBF025E208D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52848EA4-F9B2-4A35-A432-45927B0119C6}
